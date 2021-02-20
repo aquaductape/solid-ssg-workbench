@@ -14,14 +14,7 @@ const App = () => {
 
   return (
     <div>
-      hello
-      <br />
-      <ul>
-        <li>i love</li>
-        <li>cheese</li>
-        <li>burger</li>
-      </ul>
-      <br />
+      <h1>Solid SSG</h1>
       <Button></Button>
       <br />
       <br />

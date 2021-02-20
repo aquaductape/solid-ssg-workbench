@@ -1,7 +1,7 @@
 import { createEffect, createSignal } from "solid-js";
 
 const Button = () => {
-  const [clicked, setClicked] = createSignal(5);
+  const [clicked, setClicked] = createSignal(0);
 
   createEffect(() => {
     console.log(clicked());

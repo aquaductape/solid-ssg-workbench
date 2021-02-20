@@ -21,7 +21,7 @@ export default [
         dir: "build/js",
         format: "esm",
         entryFileNames: "[name]-[hash].js",
-        chunkFileNames: "[name]-[hash].js",
+        chunkFileNames: "[name]-chunkFile-[hash].js",
       },
     ],
     preserveEntrySignatures: false,
@@ -76,7 +76,7 @@ export default [
     external: ["solid-js", "solid-js/web", "node-fetch"],
     plugins: [
       del({ targets: "ssg/lib" }),
-      // typescript(),
+      typescript(),
       nodeResolve({
         extensions,
         preferBuiltins: true,

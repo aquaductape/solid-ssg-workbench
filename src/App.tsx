@@ -25,7 +25,7 @@ const App = () => {
       <Button></Button>
       <br />
       <br />
-      <button onClick={() => onClick()}>Import Card Component</button>
+      <button onClick={onClick}>Import Card Component</button>
       {renderButton() ? (
         <Suspense fallback={<div class="loader">loading btn...</div>}>
           <Card></Card>

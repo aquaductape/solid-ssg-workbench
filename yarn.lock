@@ -2747,10 +2747,10 @@ solid-app-router@^0.0.21:
   resolved "https://registry.yarnpkg.com/solid-app-router/-/solid-app-router-0.0.21.tgz#064377706c415bd641ad514e0b7461e2ebf3c095"
   integrity sha512-DgNOjV7NTeE1xODD9X9ZYpTu2qhtH+io/T2ioTg4iaitCniEPaWH8DY0j8FrBmDgSCOT9TlJdXhKVua6tif3IQ==
 
-solid-js@0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-0.24.0.tgz#718746158914144cafc034db27b063052aa96254"
-  integrity sha512-HfgYWjaca00XsIGgtaM1gTOE5wcZD5nB02pov8UJkwBvNKS0E9dOK8RxiGpg41SdHDH7o8t3tDSFtcCp54nMtw==
+solid-js@^0.24.7:
+  version "0.24.7"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-0.24.7.tgz#0de4c63ca794a898bfdefb361e0135cce2223ead"
+  integrity sha512-Hi/Kvf3+e+664bBMG5NhZb+0jkWJHvMbWagCDH1AQMODFwoOZABBpUK1xfOhrtHEWMKpIz3fOzg5jOWwd/cdMA==
 
 solid-ssr@^0.24.0:
   version "0.24.7"

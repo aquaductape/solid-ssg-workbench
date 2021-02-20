@@ -3,14 +3,17 @@ import babel from "@rollup/plugin-babel";
 import json from "@rollup/plugin-json";
 import copy from "rollup-plugin-copy";
 import typescript from "@rollup/plugin-typescript";
+import url from "@rollup/plugin-url";
 import del from "rollup-plugin-delete";
 import md5File from "md5-file";
 import sass from "sass";
 import CleanCSS from "clean-css";
 import { terser } from "rollup-plugin-terser";
+
 const extensions = [".ts", ".tsx", ".jsx"];
 const styleRegex = /^.*css|scss$/;
 const sassRegex = /^.*scss$/;
+
 export default [
   {
     input: "src/index.tsx",
@@ -20,6 +23,7 @@ export default [
         format: "esm",
         entryFileNames: "[name]-[hash].js",
         chunkFileNames: "[name]-chunkFile-[hash].js",
+        assetFileNames: "[name].[hash][extname]",
       },
     ],
     preserveEntrySignatures: false,
@@ -60,6 +64,7 @@ export default [
         ],
       }),
       terser(),
+      url(),
     ],
   },
   {
@@ -88,6 +93,7 @@ export default [
         ],
       }),
       json(),
+      url(),
     ],
   },
 ];

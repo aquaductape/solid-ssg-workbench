@@ -8,6 +8,17 @@ body {
     background-color: white;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    height: 40vh;
+    padding: 10px;
+  }
+
   .loader {
     opacity: 0;
     animation: fadeInAnimation ease 0.3s;

@@ -1,5 +1,7 @@
 import { createSignal, lazy, Suspense } from "solid-js";
+import logo from "./assets/logo.svg";
 import Button from "./Button";
+
 const Card = lazy(() => {
   return import("./Card");
 });
@@ -13,8 +15,10 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div class="container">
       <h1>Solid SSG</h1>
+      <img src={logo} class="logo" alt="logo" />
+      <br />
       <Button></Button>
       <br />
       <br />
